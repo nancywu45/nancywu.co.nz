@@ -4,16 +4,13 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        main: [-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-        "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-        sans-serif],
-        code: ["source-code-pro", "Menlo", "Monaco", "Consolas", "Courier New", monospace],
+        main: ["Apparel Display"],
+        code: ["Courier New"],
       },
       colors: {
-        'primary': '#3d5634',
-      }
+        primary: "#3d5634",
+      },
     },
   },
   plugins: [],
-}
-
+};
