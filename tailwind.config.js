@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       fontFamily: {
@@ -8,7 +8,8 @@ module.exports = {
         code: ["Courier New"],
       },
       colors: {
-        primary: "#3d5634",
+        green: "#3d5634",
+        primary: "#ffffff",
       },
     },
   },
