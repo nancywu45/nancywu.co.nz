@@ -5,7 +5,7 @@ import { BiLogoLinkedinSquare } from "react-icons/bi";
 
 function Home() {
   return (
-    <div className="min-h-screen bg-green px-10">
+    <section className="min-h-screen bg-green px-10">
       <nav className="py-10 text-primary font-main text-xl flex justify-between">
         <a href="#">
           <GiPlainSquare className="text-3xl justify-start cursor-pointer" />
@@ -25,25 +25,27 @@ function Home() {
           </li>
         </ul>
       </nav>
-      <div className="font-main text-primary m-auto">
+      <div className="font-main text-primary p-10">
         <h2 className="text-2xl">Hello!</h2>
         <h1 className="italic">
-          <span className="items-center">I'm </span>
-          <span className="text-5xl font-semibold">Nancy Wu</span>
+          <span className="text-xl m-auto align-middle">I'm </span>
+          <span className="text-5xl font-semibold align-middle">Nancy Wu</span>
         </h1>
-        <p className="font-code">
+        <p className="font-code py-8">
           I’m a penultimate year Computer Science and Commerce student at the
           University of Auckland. Learn more about my experience and passion
           projects below!
         </p>
-        <a href="https://github.com/nancywu45">
-          <AiFillGithub />
-        </a>
-        <a href="https://www.linkedin.com/in/nancywu45/">
-          <BiLogoLinkedinSquare />
-        </a>
+        <div className="text-3xl">
+          <a href="https://github.com/nancywu45" target="_blank">
+            <AiFillGithub />
+          </a>
+          <a href="https://www.linkedin.com/in/nancywu45/" target="_blank">
+            <BiLogoLinkedinSquare />
+          </a>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
 
