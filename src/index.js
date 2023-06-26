@@ -1,13 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
-import App from "./App";
+import Home from "./components/Home";
+import "./tailwind.css";
+import Experience from "./components/Experience";
+import Work from "./components/Work";
+import Contact from "./components/Contact";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <Home />
+    {/* <Experience />
+    <Work />
+    <Contact /> */}
   </React.StrictMode>
 );
 
