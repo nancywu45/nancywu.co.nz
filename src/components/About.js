@@ -12,8 +12,8 @@ import nancy from "../images/Nancy.JPG";
 
 const About = () => {
   return (
-    <section className="min-h-screen bg-green px-10 font-main text-primary">
-      <div className="flex">
+    <section className="min-h-screen bg-green px-10 md:px-20 lg:px-40 font-main text-primary">
+      <div className="md:flex">
         <div>
           <h2 className="text-3xl">about me</h2>
           <p className="font-code">
@@ -27,8 +27,8 @@ const About = () => {
         />
       </div>
       <div>
-        <h2 className="text-3xl">skills</h2>
-        <div className="text-8xl flex">
+        <h2 className="text-3xl pt-10">skills</h2>
+        <div className="text-8xl flex flex-wrap">
           <BiLogoJavascript />
           <BiLogoReact />
           <BiLogoHtml5 />
