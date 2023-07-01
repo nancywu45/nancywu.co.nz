@@ -14,9 +14,10 @@ function Home() {
         </h1>
         <p className="font-code py-8 max-w-xl">
           I’m a penultimate year Computer Science and Commerce student at the
-          University of Auckland. Learn more about my experience and passion
-          projects below!
+          University of Auckland passionate about front-end development and the
+          interconnection between business and technology.
         </p>
+        <button>Find out more!</button>
         <div className="text-3xl">
           <a href="https://github.com/nancywu45" target="_blank">
             <AiFillGithub />

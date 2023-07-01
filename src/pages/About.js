@@ -8,7 +8,7 @@ import {
   BiLogoReact,
 } from "react-icons/bi";
 import { PiFigmaLogoThin } from "react-icons/pi";
-import nancy from "../images/Nancy.JPG";
+import nancy from "../assets/Nancy.JPG";
 
 const About = () => {
   return (
@@ -16,9 +16,23 @@ const About = () => {
       <div className="md:flex">
         <div>
           <h2 className="text-3xl">about me</h2>
-          <p className="font-code">
-            [insert about me text to be changed later]
-          </p>
+          <div className="font-code">
+            <p>
+              My name is Nancy and I am in my third year of a Computer Science
+              and Commerce degree at the University of Auckland.
+            </p>
+            <p>
+              I have had a passion for visual art and design since I was a kid,
+              so naturally my passion in software leans toward front-end
+              development. I have picked up an interest in self-teaching web
+              development, with a desire to extend into mobile development in
+              the near future.
+            </p>
+            <p>
+              Some of my other interests include graphic design, finance and
+              tech podcasts, trying new restaurants, and running.
+            </p>
+          </div>
         </div>
         <img
           src={nancy}

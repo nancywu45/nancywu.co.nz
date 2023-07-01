@@ -9,16 +9,16 @@ const Nav = () => {
           <GiPlainSquare className="text-3xl justify-start cursor-pointer" />
         </a>
         <ul className="flex items-center">
-          <li className="px-2">
+          <li className="px-2 hover:underline underline-offset-4">
             <a href="#">about</a>
           </li>
-          <li className="px-2">
+          <li className="px-2 hover:underline underline-offset-4">
             <a href="#">experience</a>
           </li>
-          <li className="px-2">
+          <li className="px-2 hover:underline underline-offset-4">
             <a href="#">work</a>
           </li>
-          <li className="px-2">
+          <li className="px-2 hover:underline underline-offset-4">
             <a href="#">contact</a>
           </li>
         </ul>
