@@ -5,10 +5,9 @@ function Home() {
   return (
     <section className="min-h-screen bg-green px-10 md:px-20 lg:px-40 flex w-screen items-center overflow-x-hidden">
       <div className="font-main text-primary p-10">
-        <h2 className="text-2xl">Hello!</h2>
-        <h1 className="italic">
-          <span className="text-xl m-auto align-middle">I'm </span>
-          <span className="text-5xl font-semibold align-middle">Nancy Wu</span>
+        <h2 className="text-2xl">Hello! I'm</h2>
+        <h1>
+          <span className="text-6xl font-semibold align-middle">Nancy.</span>
         </h1>
         <p className="font-code pt-8 pb-14 max-w-xl">
           I’m a penultimate year Computer Science and Commerce student at the

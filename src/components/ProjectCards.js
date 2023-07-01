@@ -31,7 +31,7 @@ export default function ProjectCards() {
   });
 
   return (
-    <div className="flex gap-7 pt-3">
+    <div className="flex gap-7 pt-3 flex-wrap">
       <ThemeProvider theme={theme}>
         <Card
           sx={{ maxWidth: 345 }}
