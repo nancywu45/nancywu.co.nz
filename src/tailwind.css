@@ -13,6 +13,10 @@
   background-color: #3d5634;
 }
 
+/* *::-webkit-scrollbar-track {
+  background-color: #3d5634;
+} */
+
 *::-webkit-scrollbar-thumb {
   background-color: white;
   border: 5px solid #3d5634;

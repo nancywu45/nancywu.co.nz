@@ -1,10 +1,24 @@
 import React from "react";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import { GiPlainSquare } from "react-icons/gi";
+// import { HashLink as Link } from "react-router-hash-link";
+
+function CustomLink({ to, children, ...props }) {
+  const resolvedPath = useResolvedPath(to);
+  const isActive = useMatch({ path: resolvedPath.pathname, end: true });
+
+  return (
+    <li className={isActive === to ? "active" : ""}>
+      <Link to={to} {...props}>
+        {children}
+      </Link>
+    </li>
+  );
+}
 
 const Nav = () => {
   return (
-    <div className="bg-green px-10 md:px-20 lg:px-30 sticky top-0">
+    <div className="w-screen bg-green px-10 md:px-20 lg:px-30 sticky top-0">
       <nav className="py-10 text-primary font-main text-xl flex justify-between">
         <Link to="/">
           <GiPlainSquare className="text-3xl justify-start cursor-pointer" />
@@ -39,18 +53,5 @@ const Nav = () => {
     </div>
   );
 };
-
-function CustomLink({ to, children, ...props }) {
-  const resolvedPath = useResolvedPath(to);
-  const isActive = useMatch({ path: resolvedPath.pathname, end: true });
-
-  return (
-    <li className={isActive === to ? "active" : ""}>
-      <Link to={to} {...props}>
-        {children}
-      </Link>
-    </li>
-  );
-}
 
 export default Nav;
