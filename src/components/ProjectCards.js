@@ -6,7 +6,6 @@ import Typography from "@mui/material/Typography";
 import { Button, CardActions } from "@mui/material";
 import {
   createTheme,
-  responsiveFontSizes,
   ThemeProvider,
 } from "@mui/material/styles";
 import { FiGithub } from "react-icons/fi";

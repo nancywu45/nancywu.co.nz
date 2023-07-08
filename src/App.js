@@ -6,8 +6,6 @@ import Experience from "./pages/Experience";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import SocialMedia from "./components/SocialMedia";
-import { Route, Routes } from "react-router-dom";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 function App() {
   const homeRef = useRef(null);
