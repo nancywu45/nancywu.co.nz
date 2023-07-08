@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Nav from "./components/Nav";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -7,20 +7,23 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import SocialMedia from "./components/SocialMedia";
 import { Route, Routes } from "react-router-dom";
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 function App() {
+  const homeRef = useRef(null);
+  const aboutRef = useRef(null);
+  const experienceRef = useRef(null);
+  const projectsRef = useRef(null);
+  const contactRef = useRef(null);
   return (
     <div>
-      <Nav />
-      <div className="container">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </div>
+      <Nav homeRef={homeRef} experienceRef={experienceRef} aboutRef={aboutRef} projectsRef={projectsRef} contactRef={contactRef}/>
+      <Home ref={homeRef}/>
+      <About ref={aboutRef}/>
+      <Experience ref={experienceRef} />
+      <Projects ref={projectsRef}/>
+      <Contact ref={contactRef}/>
+
       <SocialMedia />
     </div>
   );

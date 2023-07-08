@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import { GiPlainSquare } from "react-icons/gi";
-// import { HashLink as Link } from "react-router-hash-link";
 
 function CustomLink({ to, children, ...props }) {
   const resolvedPath = useResolvedPath(to);
@@ -16,38 +15,41 @@ function CustomLink({ to, children, ...props }) {
   );
 }
 
-const Nav = () => {
+const Nav = ({homeRef, aboutRef, experienceRef, projectsRef, contactRef}) => {
+  const scrollToRef = (ref) => {
+    window.scrollTo(0, ref.current.offsetTop - 110);
+  }
   return (
-    <div className="w-screen bg-green px-10 md:px-20 lg:px-30 sticky top-0">
+    <div className="w-full bg-green px-10 md:px-20 lg:px-30 sticky top-0 overflow-y-hidden">
       <nav className="py-10 text-primary font-main text-xl flex justify-between">
-        <Link to="/">
+        <button onClick={() => scrollToRef(homeRef)}>
           <GiPlainSquare className="text-3xl justify-start cursor-pointer" />
-        </Link>
+        </button>
         <ul className="flex items-center">
-          <CustomLink
+          <button
             className="px-2 hover:underline underline-offset-4 active:underline"
-            to="./about"
+            onClick={() => scrollToRef(aboutRef)}
           >
             about
-          </CustomLink>
-          <CustomLink
+          </button>
+          <button
             className="px-2 hover:underline underline-offset-4 active:underline"
-            to="./experience"
+            onClick={() => scrollToRef(experienceRef)}
           >
             experience
-          </CustomLink>
-          <CustomLink
+          </button>
+          <button
             className="px-2 hover:underline underline-offset-4 active:underline"
-            to="./projects"
+            onClick={() => scrollToRef(projectsRef)}
           >
             projects
-          </CustomLink>
-          <CustomLink
+          </button>
+          <button
             className="px-2 hover:underline underline-offset-4 active:underline"
-            to="./contact"
+            onClick={() => scrollToRef(contactRef)}
           >
             contact
-          </CustomLink>
+          </button>
         </ul>
       </nav>
     </div>

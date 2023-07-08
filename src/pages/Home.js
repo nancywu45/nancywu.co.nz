@@ -1,9 +1,10 @@
 import "../tailwind.css";
 import { Link } from "react-router-dom";
+import React, { forwardRef } from "react";
 
-function Home() {
+const Home = forwardRef((props, ref) => {
   return (
-    <section className="min-h-screen bg-green px-10 md:px-20 lg:px-40 flex w-screen items-center">
+    <section ref={ref} id="home" className="min-h-[calc(100vh-100px)] bg-green px-10 md:px-20 lg:px-40 flex w-full items-center">
       <div className="font-main text-primary p-12">
         <h2 className="text-2xl text-primary font-main">Hello! I'm</h2>
         <h1>
@@ -22,6 +23,6 @@ function Home() {
       </div>
     </section>
   );
-}
+})
 
 export default Home;
