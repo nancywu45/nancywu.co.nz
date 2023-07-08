@@ -1,6 +1,6 @@
 # Nancy Wu | Portfolio
 
-My portfolio website deployed using Github Pages. This page is currently a work in progress — check it out [here](https://nancywu45.github.io/personal-portfolio/)!
+My portfolio website deployed using Github Pages. This page is currently a work in progress — check it out [here](https://nancywu.works)!
 
 <img src="src\assets\portfolio_ss.png">
 

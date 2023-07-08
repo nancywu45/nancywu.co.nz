@@ -12,9 +12,9 @@ import nancy from "../assets/nancy.png";
 
 const About = () => {
   return (
-    <section className="min-h-screen w-screen overflow-hidden bg-green px-10 md:px-20 lg:px-40 font-main text-primary flex-col">
+    <section className="min-h-screen w-screen bg-green px-10 md:px-20 lg:px-40 font-main text-primary flex-col">
       <div>
-        <h2 className="text-3xl">about me</h2>
+        <h2 className="text-3xl pt-30">about me</h2>
         <div className="md:flex">
           <div className="font-code my-4">
             <p className="my-3">

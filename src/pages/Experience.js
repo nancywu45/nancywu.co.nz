@@ -7,7 +7,7 @@ const Experience = () => {
       <h3 className="text-2xl my-4">work</h3>
       <div className="font-code">
         <p className="my-1">PwC · Corporate Treasury Intern </p>
-        <p className="my-1">Nov 2022 — Present</p>
+        <p className="my-1 text-grey">Nov 2022 — Present</p>
         <ul className="my-1 list-disc">
           <li>
             Contributed to development of Treasury Intelligence, an SQL and
@@ -23,7 +23,7 @@ const Experience = () => {
         <p className="my-1">
           University of Auckland Investment Club · Co-President
         </p>
-        <p className="my-1">Oct 2022 — Present</p>
+        <p className="my-1 text-grey">Oct 2022 — Present</p>
         <ul className="my-1 list-disc">
           <li>
             Co-leading a team of 23 to provide educational workshops,
@@ -38,7 +38,7 @@ const Experience = () => {
       </div>
       <div className="font-code mt-5">
         <p className="my-1">Developers Society · Treasurer</p>
-        <p className="my-1">Nov 2022 — Present</p>
+        <p className="my-1 text-grey">Nov 2022 — Present</p>
         <ul className="my-1 list-disc">
           <li>
             Largest student run tech club in NZ aiming to bridge the gap between
