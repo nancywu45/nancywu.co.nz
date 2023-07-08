@@ -1,19 +1,19 @@
 import React from "react";
-import { Link, useMatch, useResolvedPath } from "react-router-dom";
+// import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import { GiPlainSquare } from "react-icons/gi";
 
-function CustomLink({ to, children, ...props }) {
-  const resolvedPath = useResolvedPath(to);
-  const isActive = useMatch({ path: resolvedPath.pathname, end: true });
+// function CustomLink({ to, children, ...props }) {
+//   const resolvedPath = useResolvedPath(to);
+//   const isActive = useMatch({ path: resolvedPath.pathname, end: true });
 
-  return (
-    <li className={isActive === to ? "active" : ""}>
-      <Link to={to} {...props}>
-        {children}
-      </Link>
-    </li>
-  );
-}
+//   return (
+//     <li className={isActive === to ? "active" : ""}>
+//       <Link to={to} {...props}>
+//         {children}
+//       </Link>
+//     </li>
+//   );
+// }
 
 const Nav = ({homeRef, aboutRef, experienceRef, projectsRef, contactRef}) => {
   const scrollToRef = (ref) => {
