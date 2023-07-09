@@ -16,7 +16,7 @@ function App() {
   return (
     <div>
       <Nav homeRef={homeRef} experienceRef={experienceRef} aboutRef={aboutRef} projectsRef={projectsRef} contactRef={contactRef}/>
-      <Home ref={homeRef}/>
+      <Home ref={homeRef} aboutRef={aboutRef}/>
       <About ref={aboutRef}/>
       <Experience ref={experienceRef} />
       <Projects ref={projectsRef}/>

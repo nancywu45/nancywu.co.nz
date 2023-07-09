@@ -1,8 +1,11 @@
 import "../tailwind.css";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import React, { forwardRef } from "react";
 
-const Home = forwardRef((props, ref) => {
+const Home = forwardRef(({aboutRef}, ref) => {
+  const scrollToRef = (ref) => {
+    window.scrollTo(0, ref.current.offsetTop - 110);
+  }
   return (
     <section ref={ref} id="home" className="min-h-[calc(100vh-100px)] bg-green px-10 md:px-20 lg:px-40 flex w-full items-center">
       <div className="font-main text-primary p-12">
@@ -17,8 +20,9 @@ const Home = forwardRef((props, ref) => {
           University of Auckland passionate about front-end development and the
           interconnection between business and technology.
         </p>
-        <button className="px-10 py-3 text-2xl border-white border-2 rounded-md hover:bg-lightGreen">
-          <Link to="./about">Find out more!</Link>
+        <button onClick={() => scrollToRef(aboutRef)} className="px-10 py-3 text-2xl border-white border-2 rounded-md hover:bg-lightGreen" 
+                >
+          Find out more!
         </button>
       </div>
     </section>
