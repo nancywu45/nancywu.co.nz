@@ -143,17 +143,17 @@ export default function ProjectCards() {
             </Typography>
           </CardContent>
           <CardActions>
-            {/* <Button size="medium" color="primary">
-              <Link to="" target="_blank">
+            <Button size="medium" color="primary">
+              <Link to="https://github.com/nancywu45/musicale" target="_blank">
                 <FiGithub />
               </Link>
-            </Button> */}
+            </Button>
             <Typography variant="body2" color="text.secondary">
               Flask
             </Typography>
-            <Typography variant="body2" color="text.secondary">
+            {/* <Typography variant="body2" color="text.secondary">
               Firebase
-            </Typography>
+            </Typography> */}
           </CardActions>
         </Card>
       </ThemeProvider>
