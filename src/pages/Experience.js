@@ -19,6 +19,15 @@ const Experience = forwardRef((props, ref) => {
             </li>
           </ul>
         </div>
+        <div className="font-code mt-5">
+          <p className="my-1">2degrees · Retail Assistant </p>
+          <p className="my-1 text-grey">Nov 2021 — Oct 2022</p>
+          <ul className="my-1 ml-6 list-disc">
+            <li>
+              Upselling tech products and mobile/broadband plans with long-term financing options to read monthly store KPI targets, including more than $8,000 daily sales in peak periods
+            </li>
+          </ul>
+        </div>
         <h3 className="text-2xl my-4">extracurricular</h3>
         <div className="font-code">
           <p className="my-1">
@@ -32,8 +41,7 @@ const Experience = forwardRef((props, ref) => {
               centred around finance and investing
             </li>
             <li>
-              Introduced a student podcast to strengthen the connection between
-              UAIC and alumni
+              Increased club membership numbers by 67% to ~450 in 2023
             </li>
           </ul>
         </div>
@@ -43,7 +51,7 @@ const Experience = forwardRef((props, ref) => {
           <ul className="my-1 ml-6 list-disc">
             <li>
               Largest student run tech club in NZ aiming to bridge the gap between
-              academia and industry
+              academia and industry, consisting of ~300 members
             </li>
             <li>
               Communicating with firms for sponsorship contracts and managed the
