@@ -7,7 +7,7 @@ const SocialMedia = () => {
   return (
     <div className="text-primary fixed bottom-0 pl-10 md:pl-20 lg:pl-30 pb-10 text-4xl flex-col">
       <Link to="https://github.com/nancywu45" target="_blank">
-        <AiFillGithub />
+        <AiFillGithub className="my-2"/>
       </Link>
       <Link to="https://www.linkedin.com/in/nancywu45/" target="_blank">
         <BiLogoLinkedinSquare />
