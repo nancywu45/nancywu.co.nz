@@ -5,6 +5,7 @@ const Experience = forwardRef((props, ref) => {
     <section ref={ref} id="experience" className="min-h-[calc(100vh-100px)] w-full bg-green px-10 md:px-20 lg:px-40 font-main text-primary">
       <div className="p-12">
         <h2 className="text-3xl">experience</h2>
+        <hr></hr>
         <h3 className="text-2xl my-4">work</h3>
         <div className="font-code">
           <p className="my-1">PwC · Corporate Treasury Intern </p>

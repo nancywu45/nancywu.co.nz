@@ -14,6 +14,15 @@ module.exports = {
         primary: "#ffffff",
         grey: "#DADADA",
       },
+      keyframes: {
+        slidein: {
+          from: { marginLeft: 0 },
+          to: { marginLeft: 100 }
+        }
+      },
+      animation: {
+        slidein: 'slidein 1s'
+      }
     },
   },
   plugins: [],
