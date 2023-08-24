@@ -18,9 +18,9 @@ const About = forwardRef((props, ref) => {
     <section ref={ref} className="min-h-[calc(100vh-110px)] w-full bg-green px-10 md:px-20 lg:px-40 font-main text-primary flex-col">
       <div className="p-12">
         <div>
-          <div class="relative flex">
+          <div className="relative flex">
             <h2 className="text-3xl pt-30 flex-shrink">about me</h2>
-            <div class="flex-grow border-t border-grey mt-5 ml-4"></div>
+            <div className="flex-grow border-t border-grey mt-5 ml-4"></div>
           </div>
           <div className="md:flex">
             <div className="font-code my-4">
@@ -44,9 +44,9 @@ const About = forwardRef((props, ref) => {
           </div>
         </div>
         <div>
-          <div class="relative flex pt-10 pb-3">
+          <div className="relative flex pt-10 pb-3">
             <h2 className="flex-shrink text-3xl">technologies</h2>
-            <div class="flex-grow border-t border-grey mt-5 ml-4"></div>
+            <div className="flex-grow border-t border-grey mt-5 ml-4"></div>
           </div>
           <div className="text-8xl flex flex-wrap">
             <BiLogoJavascript />
