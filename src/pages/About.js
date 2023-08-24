@@ -18,7 +18,7 @@ const About = forwardRef((props, ref) => {
     <section ref={ref} className="min-h-[calc(100vh-110px)] w-full bg-green px-12 md:px-24 lg:px-40 font-main text-primary flex-col">
       <div className="p-12">
         <div>
-          <div className="relative flex">
+          <div className="flex">
             <h2 className="text-3xl pt-30 flex-shrink">about me</h2>
             <div className="flex-grow border-t border-grey mt-5 ml-4"></div>
           </div>
@@ -44,7 +44,7 @@ const About = forwardRef((props, ref) => {
           </div>
         </div>
         <div>
-          <div className="relative flex pt-10 pb-3">
+          <div className="flex pt-10 pb-6">
             <h2 className="flex-shrink text-3xl">technologies</h2>
             <div className="flex-grow border-t border-grey mt-5 ml-4"></div>
           </div>

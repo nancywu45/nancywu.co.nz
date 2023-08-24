@@ -13,7 +13,7 @@ const SocialMedia = () => {
         <Link className="flex shrink" to="https://www.linkedin.com/in/nancywu45/" target="_blank">
           <BiLogoLinkedinSquare/>
         </Link>
-        <div className="flex-grow border-l border-grey my-2 ml-4 h-40"></div>
+        <div className="flex-grow border-l border-grey mt-2 ml-4 h-40"></div>
       </div>
     </div>
   );

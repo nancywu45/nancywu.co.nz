@@ -4,7 +4,7 @@ const Experience = forwardRef((props, ref) => {
   return (
     <section ref={ref} id="experience" className="min-h-[calc(100vh-100px)] w-full bg-green px-12 md:px-24 lg:px-40 font-main text-primary">
       <div className="p-12">
-        <div className="relative flex">
+        <div className="flex">
             <h2 className="flex-shrink text-3xl">experience</h2>
             <div className="flex-grow border-t border-grey mt-5 ml-4"></div>
         </div>

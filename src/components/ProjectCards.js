@@ -10,6 +10,10 @@ import {
 } from "@mui/material/styles";
 import { FiGithub } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import trilogy from "../assets/trilogy.png"
+import tradeez from "../assets/tradeez.png"
+import musicale from "../assets/musicale.png"
+import auxilium from "../assets/auxilium.png"
 
 export default function ProjectCards() {
   const theme = createTheme({
@@ -39,8 +43,8 @@ export default function ProjectCards() {
         >
           <CardMedia
             // component="img"
-            height="140"
-            image="././public/trilogy.png"
+            sx = {{ height: 220 }}
+            image={ trilogy }
             alt="trilogy tutoring"
           />
           <CardContent>
@@ -81,9 +85,8 @@ export default function ProjectCards() {
           style={{ backgroundColor: "#DFE5DC" }}
         >
           <CardMedia
-            // component="img"
-            height="140"
-            image=".\assets\tradeez.png"
+           sx = {{ height: 220 }}
+            image= { tradeez }
             alt="tradeez"
           />
           <CardContent>
@@ -122,9 +125,8 @@ export default function ProjectCards() {
           style={{ backgroundColor: "#DFE5DC" }}
         >
           <CardMedia
-            // component="img"
-            height="140"
-            image="..\assets\musicale.png"
+            sx={{ height: 220}}
+            image={ musicale }
             alt="musicale"
           />
           <CardContent>
@@ -150,6 +152,48 @@ export default function ProjectCards() {
             </Button>
             <Typography variant="body2" color="text.secondary">
               Flask
+            </Typography>
+            {/* <Typography variant="body2" color="text.secondary">
+              Firebase
+            </Typography> */}
+          </CardActions>
+        </Card>
+        <Card
+          sx={{ maxWidth: 345 }}
+          className="font-code"
+          style={{ backgroundColor: "#DFE5DC" }}
+        >
+          <CardMedia
+            sx={{ height: 220}}
+            image={ auxilium }
+            alt="auxilium"
+          />
+          <CardContent>
+            <Typography
+              gutterBottom
+              variant="h5"
+              component="div"
+              color="primary"
+              fontWeight={"bold"}
+              align="center"
+            >
+              Auxilium
+            </Typography>
+            <Typography variant="body2" color="text.secondary" align="center">
+              A beginner-friendly Q&A forum for junior developers
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <Button size="medium" color="primary">
+              <Link to="https://github.com/KeiHara/Auxilium" target="_blank">
+                <FiGithub />
+              </Link>
+            </Button>
+            <Typography variant="body2" color="text.secondary">
+              React.js
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              Firebase
             </Typography>
             {/* <Typography variant="body2" color="text.secondary">
               Firebase
