@@ -15,7 +15,7 @@ const About = forwardRef((props, ref) => {
   const { ref: viewRef, inView: myElementIsVisible } = useInView();
 
   return (
-    <section ref={ref} className="min-h-[calc(100vh-110px)] w-full bg-green px-10 md:px-20 lg:px-40 font-main text-primary flex-col">
+    <section ref={ref} className="min-h-[calc(100vh-110px)] w-full bg-green px-12 md:px-24 lg:px-40 font-main text-primary flex-col">
       <div className="p-12">
         <div>
           <div className="relative flex">
