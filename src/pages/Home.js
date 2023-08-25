@@ -7,8 +7,8 @@ const Home = forwardRef(({aboutRef}, ref) => {
     window.scrollTo(0, ref.current.offsetTop - 110);
   }
   return (
-    <section ref={ref} id="home" className="min-h-[calc(100vh-100px)] bg-green px-10 md:px-20 lg:px-40 flex w-full items-center">
-      <div className="font-main text-primary p-12">
+    <section ref={ref} id="home" className="min-h-[calc(100vh-100px)] bg-green md:px-24 lg:px-40 flex w-full items-center">
+      <div className="font-main text-primary p-10">
         <h2 className="text-2xl text-primary font-main">Hello! I'm</h2>
         <h1>
           <span className="text-6xl font-semibold align-middle text-primary font-main">

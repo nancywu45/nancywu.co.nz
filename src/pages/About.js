@@ -1,5 +1,5 @@
-import React, { useRef, useEffect, useState, forwardRef } from "react";
-import { useInView } from 'react-intersection-observer'; 
+import React, { forwardRef } from "react";
+// import { useInView } from 'react-intersection-observer'; 
 import {
   BiLogoPython,
   BiLogoJavascript,
@@ -12,11 +12,11 @@ import { PiFigmaLogoThin } from "react-icons/pi";
 import nancy from "../assets/nancy.png";
 
 const About = forwardRef((props, ref) => {
-  const { ref: viewRef, inView: myElementIsVisible } = useInView();
+  // const { ref: viewRef } = useInView();
 
   return (
-    <section ref={ref} className="min-h-[calc(100vh-110px)] w-full bg-green px-12 md:px-24 lg:px-40 font-main text-primary flex-col">
-      <div className="p-12">
+    <section ref={ref} className="min-h-[calc(100vh-110px)] w-full bg-green md:px-24 lg:px-40 font-main text-primary flex-col">
+      <div className="p-10">
         <div>
           <div className="flex">
             <h2 className="text-3xl pt-30 flex-shrink">about me</h2>
@@ -24,7 +24,7 @@ const About = forwardRef((props, ref) => {
           </div>
           <div className="md:flex">
             <div className="font-code my-4">
-              <p  ref={viewRef} className="my-3">
+              <p className="my-3">
                 My name is Nancy and I am in my third year of a Computer Science
                 and Commerce degree at the University of Auckland.
               </p>

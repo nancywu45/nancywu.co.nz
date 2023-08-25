@@ -5,7 +5,7 @@ import { BiLogoLinkedinSquare } from "react-icons/bi";
 
 const SocialMedia = () => {
   return (
-    <div className="text-primary fixed bottom-0 pl-10 md:pl-20 lg:pl-30 text-4xl flex-col">
+    <div className="text-primary fixed bottom-0 invisible md:visible md:pl-20 lg:pl-30 text-4xl flex-col">
       <div className="relative flex flex-col">
         <Link className="flex shrink" to="https://github.com/nancywu45" target="_blank">
           <AiFillGithub className="my-2"/>
