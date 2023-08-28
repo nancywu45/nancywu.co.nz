@@ -44,7 +44,8 @@ const Experience = forwardRef((props, ref) => {
     }
   ]
 
-  const [toggle, setToggle] = useState()
+  const [workToggle, setWorkToggle] = useState()
+  const [expToggle, setExpToggle] = useState()
 
   return (
     <section ref={ref} id="experience" className="min-h-[calc(100vh-100px)] w-full bg-green md:px-24 lg:px-40 font-main text-primary">
@@ -61,7 +62,7 @@ const Experience = forwardRef((props, ref) => {
                 return(
                   <button 
                     className="border-l-2 p-4 text-left w-full hover:bg-lightGreen focus:bg-lightGreen active:bg-lightGreen"
-                    onClick={() => setToggle(id)}
+                    onClick={() => setWorkToggle(id)}
                   >
                     {company}
                   </button>
@@ -74,7 +75,7 @@ const Experience = forwardRef((props, ref) => {
               work.map(({id, company, role, startDate, endDate, bullet1, bullet2}) => {
                 return(
                   <>
-                    {toggle === id ? (
+                    {workToggle === id ? (
                     <div className="ml-6">
                       <p className="my-1 text-lg">{company} · {role} </p>
                       <p className="my-1 text-grey">{startDate} — {endDate}</p>
@@ -103,7 +104,7 @@ const Experience = forwardRef((props, ref) => {
                 return(
                   <button 
                     className="border-l-2 p-4 text-left w-full hover:bg-lightGreen focus:bg-lightGreen active:bg-lightGreen"
-                    onClick={() => setToggle(id)}
+                    onClick={() => setExpToggle(id)}
                   >
                     {id}
                   </button>
@@ -116,7 +117,7 @@ const Experience = forwardRef((props, ref) => {
               extracurricular.map(({id, company, role, startDate, endDate, bullet1, bullet2}) => {
                 return(
                   <>
-                    {toggle === id ? (
+                    {expToggle === id ? (
                     <div className="ml-6">
                       <p className="my-1 text-lg">{company} · {role} </p>
                       <p className="my-1 text-grey">{startDate} — {endDate}</p>
