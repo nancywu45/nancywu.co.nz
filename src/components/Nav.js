@@ -27,19 +27,19 @@ const Nav = ({homeRef, aboutRef, experienceRef, projectsRef, contactRef}) => {
         </button>
         <ul className="flex items-center">
           <button
-            className="px-2 hover:underline underline-offset-4 invisible md:visible active:underline"
+            className="px-2 hover:underline underline-offset-4 invisible md:visible focus:underline"
             onClick={() => scrollToRef(aboutRef)}
           >
             about
           </button>
           <button
-            className="px-2 hover:underline underline-offset-4 invisible md:visible  active:underline"
+            className="px-2 hover:underline underline-offset-4 invisible md:visible  focus:underline"
             onClick={() => scrollToRef(experienceRef)}
           >
             experience
           </button>
           <button
-            className="px-2 hover:underline underline-offset-4 invisible md:visible active:underline"
+            className="px-2 hover:underline underline-offset-4 invisible md:visible focus:underline"
             onClick={() => scrollToRef(projectsRef)}
           >
             projects

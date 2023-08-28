@@ -6,7 +6,7 @@ module.exports = {
     extend: {
       fontFamily: {
         main: ["Apparel Display"],
-        code: ["Fira Code"],
+        code: ["Fira Code", "monospace"],
       },
       colors: {
         green: "#3d5634",

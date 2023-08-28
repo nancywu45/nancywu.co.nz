@@ -24,7 +24,7 @@ const About = forwardRef((props, ref) => {
           </div>
           <div className="md:flex">
             <div className="font-code my-4">
-              <p className="my-3">
+              <p className="font-light my-3">
                 My name is Nancy and I am in my third year of a Computer Science
                 and Commerce degree at the University of Auckland.
               </p>
@@ -48,7 +48,7 @@ const About = forwardRef((props, ref) => {
             <h2 className="flex-shrink text-3xl">technologies</h2>
             <div className="flex-grow border-t border-grey mt-5 ml-4"></div>
           </div>
-          <div className="text-8xl flex flex-wrap">
+          <div className="text-7xl md:text-8xl flex flex-wrap">
             <BiLogoJavascript />
             <BiLogoReact />
             <BiLogoHtml5 />

@@ -11,7 +11,7 @@ const Contact = forwardRef((props, ref) => {
             <h2 className="flex-shrink text-3xl">contact</h2>
             <div className="flex-grow border-t border-grey mt-5 ml-4"></div>
         </div>
-        <div className="flex-col text-center pt-44">
+        <div className="flex-col text-center pt-36">
           <h2 className="text-3xl">get in touch!</h2>
           <div className="font-code pt-3 pb-10">
             <p className="font-code">
@@ -27,7 +27,7 @@ const Contact = forwardRef((props, ref) => {
             </div>
           </div>
 
-          <button className="px-10 py-3 text-2xl border-white border-2 rounded-md hover:bg-lightGreen">
+          <button className="px-8 md:px-10 py-2 md:py-3 text-xl md:text-2xl border-white border-2 rounded-md hover:bg-lightGreen">
             <Link to="mailto:nancywu45@gmail.com">Say Hello</Link>
           </button>
         </div>
