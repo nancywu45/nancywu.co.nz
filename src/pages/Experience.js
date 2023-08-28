@@ -55,7 +55,7 @@ const Experience = forwardRef((props, ref) => {
             <div className="flex-grow border-t border-grey mt-5 ml-4"></div>
         </div>
         <h3 className="text-2xl my-4">work</h3>
-        <div className="font-code flex">
+        <div className="font-code font-light flex">
           <div className="flex-col">
             {
               work.map(({id, company}) => {
@@ -97,7 +97,7 @@ const Experience = forwardRef((props, ref) => {
         </div>
         
         <h3 className="text-2xl my-4">extracurricular</h3>
-        <div className="font-code flex">
+        <div className="font-code font-light flex">
           <div className="flex-col">
             {
               extracurricular.map(({id, company}) => {

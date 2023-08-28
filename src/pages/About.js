@@ -23,8 +23,8 @@ const About = forwardRef((props, ref) => {
             <div className="flex-grow border-t border-grey mt-5 ml-4"></div>
           </div>
           <div className="md:flex">
-            <div className="font-code my-4">
-              <p className="font-light my-3">
+            <div className="font-code font-light my-4">
+              <p className="my-3">
                 My name is Nancy and I am in my third year of a Computer Science
                 and Commerce degree at the University of Auckland.
               </p>

@@ -13,8 +13,8 @@ const Contact = forwardRef((props, ref) => {
         </div>
         <div className="flex-col text-center pt-36">
           <h2 className="text-3xl">get in touch!</h2>
-          <div className="font-code pt-3 pb-10">
-            <p className="font-code">
+          <div className="font-code font-light pt-3 pb-10">
+            <p>
               My inbox is open if you’d like to have a chat or feel free to reach out on my Github and LinkedIn profiles.
             </p>
             <div className="text-primary md:invisible pt-2 text-4xl justify-center flex">
