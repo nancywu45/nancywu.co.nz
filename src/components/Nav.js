@@ -21,7 +21,7 @@ const Nav = ({homeRef, aboutRef, experienceRef, projectsRef, contactRef}) => {
   }
   return (
     <div className="w-full bg-green px-10 md:px-20 lg:px-30 sticky top-0 overflow-hidden">
-      <nav className="py-10 text-primary font-main text-xl flex justify-between">
+      <nav className="py-8 md:py-10 text-primary font-main text-xl flex justify-between">
         <button onClick={() => scrollToRef(homeRef)}>
           <GiPlainSquare className="text-3xl justify-start cursor-pointer" />
         </button>

@@ -20,9 +20,9 @@ const About = forwardRef((props, ref) => {
         <div>
           <div className="flex">
             <h2 className="text-3xl pt-30 flex-shrink">about me</h2>
-            <div className="flex-grow border-t border-grey mt-5 ml-4"></div>
+            <div className="flex-grow border-t border-grey mt-5 ml-3 md:ml-4"></div>
           </div>
-          <div className="md:flex">
+          <div className="text-sm md:text-base md:flex">
             <div className="font-code font-light my-4">
               <p className="my-3">
                 My name is Nancy and I am in my third year of a Computer Science
@@ -31,12 +31,11 @@ const About = forwardRef((props, ref) => {
               <p className="my-3">
                 I have had a passion for visual art and design since I was a kid,
                 so naturally my passion in software leans toward front-end
-                development. I have picked up an interest in self-teaching web
-                development, with a desire to extend into mobile development in
-                the near future.
+                development. I enjoy dabbling with new software products and technologies, 
+                especially in the web and mobile development area.
               </p>
               <p className="my-3">
-                Some of my other interests include graphic design, business and
+                Some of my other interests include graphic design (most notably with platforms like Procreate and Figma), business and
                 tech podcasts, films, trying new restaurants, and fitness.
               </p>
             </div>
@@ -44,11 +43,11 @@ const About = forwardRef((props, ref) => {
           </div>
         </div>
         <div>
-          <div className="flex pt-10 pb-6">
+          <div className="flex pt-10 pb-4 md:pb-6">
             <h2 className="flex-shrink text-3xl">technologies</h2>
             <div className="flex-grow border-t border-grey mt-5 ml-4"></div>
           </div>
-          <div className="text-7xl md:text-8xl flex flex-wrap">
+          <div className="text-6xl md:text-7xl flex flex-wrap">
             <BiLogoJavascript />
             <BiLogoReact />
             <BiLogoHtml5 />

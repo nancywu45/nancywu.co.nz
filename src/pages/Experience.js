@@ -54,14 +54,14 @@ const Experience = forwardRef((props, ref) => {
             <h2 className="flex-shrink text-3xl">experience</h2>
             <div className="flex-grow border-t border-grey mt-5 ml-4"></div>
         </div>
-        <h3 className="text-2xl my-4">work</h3>
-        <div className="font-code font-light flex">
-          <div className="flex-col">
+        <h3 className="text-2xl mt-4 mb-2 md:my-4">work</h3>
+        <div className="font-code font-light md:flex">
+          <div className="pb-2 md:pb-0">
             {
               work.map(({id, company}) => {
                 return(
                   <button 
-                    className="border-l-2 p-4 text-left w-full hover:bg-lightGreen focus:bg-lightGreen active:bg-lightGreen"
+                    className="border-b-2 md:border-l-2 border-grey md:border-b-0 px-4 py-2 text-center md:text-left w-28 md:py-4 text-grey text-left hover:bg-lightGreen focus:bg-lightGreen active:bg-lightGreen"
                     onClick={() => setWorkToggle(id)}
                   >
                     {company}
@@ -76,10 +76,10 @@ const Experience = forwardRef((props, ref) => {
                 return(
                   <>
                     {workToggle === id ? (
-                    <div className="ml-6">
-                      <p className="my-1 text-lg">{company} · {role} </p>
-                      <p className="my-1 text-grey">{startDate} — {endDate}</p>
-                      <ul className="my-1 ml-6 list-disc">
+                    <div className="md:ml-6">
+                      <p className="my-1 font-normal text-base md:text-lg">{company} · {role} </p>
+                      <p className="my-1 text-grey text-sm md:text-base">{startDate} — {endDate}</p>
+                      <ul className="my-1 ml-6 list-disc text-sm md:text-base">
                         <li className="my-2">
                           {bullet1}
                         </li>
@@ -96,14 +96,14 @@ const Experience = forwardRef((props, ref) => {
           </div>
         </div>
         
-        <h3 className="text-2xl my-4">extracurricular</h3>
-        <div className="font-code font-light flex">
-          <div className="flex-col">
+        <h3 className="text-2xl mt-4 mb-2 md:my-4">extracurricular</h3>
+        <div className="font-code font-light md:flex">
+          <div className="pb-2 md:pb-0">
             {
               extracurricular.map(({id, company}) => {
                 return(
                   <button 
-                    className="border-l-2 p-4 text-left w-full hover:bg-lightGreen focus:bg-lightGreen active:bg-lightGreen"
+                    className="border-b-2 md:border-l-2 border-grey md:border-b-0 px-4 py-2 text-center md:text-left w-28 md:py-4 text-grey text-left hover:bg-lightGreen focus:bg-lightGreen active:bg-lightGreen"
                     onClick={() => setExpToggle(id)}
                   >
                     {id}
@@ -118,10 +118,10 @@ const Experience = forwardRef((props, ref) => {
                 return(
                   <>
                     {expToggle === id ? (
-                    <div className="ml-6">
-                      <p className="my-1 text-lg">{company} · {role} </p>
-                      <p className="my-1 text-grey">{startDate} — {endDate}</p>
-                      <ul className="my-1 ml-6 list-disc">
+                    <div className="md:ml-6">
+                      <p className="my-1 font-normal text-base md:text-lg">{company} · {role} </p>
+                      <p className="my-1 text-grey text-sm md:text-base">{startDate} — {endDate}</p>
+                      <ul className="my-1 ml-6 list-disc text-sm md:text-base">
                         <li className="my-2">
                           {bullet1}
                         </li>
