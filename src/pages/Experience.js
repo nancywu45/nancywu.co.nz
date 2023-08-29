@@ -30,7 +30,7 @@ const Experience = forwardRef((props, ref) => {
       role: 'Co-President',
       startDate: 'Oct 2022',
       endDate: 'Present',
-      bullet1: 'Co-leading a team of 23 to provide educational workshops, competitions, mentoring programmes, and networking opportunities centred around finance and investing',
+      bullet1: 'Co-leading a team of 23 to provide a 30+ event schedule for members, consisting of educational workshops, competitions, mentoring programmes, and networking opportunities centred around finance and investing',
       bullet2: 'Increased club membership numbers by 67% to ~450 in 2023',
     },
     {
@@ -41,6 +41,15 @@ const Experience = forwardRef((props, ref) => {
       endDate: 'Present',
       bullet1: 'Largest student run tech club in NZ aiming to bridge the gap between academia and industry, consisting of ~300 members',
       bullet2: 'Communicating with firms for sponsorship contracts and managed the yearly budget for EOY financial statements',
+    },
+    {
+      id: 'UoA Case',
+      company: 'University of Auckland Case Programme',
+      role: 'Member',
+      startDate: 'Sep 2022',
+      endDate: 'Present',
+      bullet1: 'Working in teams to analyse a business case and formulate strategies and implementation recommendations before presenting to a panel of judges',
+      bullet2: 'Eligible to represent the university in national and international case competitions',
     }
   ]
 
@@ -61,7 +70,7 @@ const Experience = forwardRef((props, ref) => {
               work.map(({id, company}) => {
                 return(
                   <button 
-                    className="border-b-2 md:border-l-2 border-grey md:border-b-0 px-4 py-2 text-center md:text-left w-28 md:py-4 text-grey text-left hover:bg-lightGreen focus:bg-lightGreen active:bg-lightGreen"
+                    className={`border-b-2 md:border-l-2  ${workToggle === id ? 'border-grey text-grey bg-midGreen' : 'border-lightGreen text-lightGreen'}  md:border-b-0 px-4 py-2 text-center md:text-left w-28 md:py-4  font-normal text-left`}
                     onClick={() => setWorkToggle(id)}
                   >
                     {company}
@@ -103,7 +112,7 @@ const Experience = forwardRef((props, ref) => {
               extracurricular.map(({id, company}) => {
                 return(
                   <button 
-                    className="border-b-2 md:border-l-2 border-grey md:border-b-0 px-4 py-2 text-center md:text-left w-28 md:py-4 text-grey text-left hover:bg-lightGreen focus:bg-lightGreen active:bg-lightGreen"
+                    className={`border-b-2 md:border-l-2  ${expToggle === id ? 'border-grey text-grey bg-midGreen' : 'border-lightGreen text-lightGreen'}  md:border-b-0 px-4 py-2 text-center md:text-left w-28 md:py-4  font-normal text-left`}
                     onClick={() => setExpToggle(id)}
                   >
                     {id}
