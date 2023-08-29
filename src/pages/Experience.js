@@ -44,8 +44,8 @@ const Experience = forwardRef((props, ref) => {
     }
   ]
 
-  const [workToggle, setWorkToggle] = useState()
-  const [expToggle, setExpToggle] = useState()
+  const [workToggle, setWorkToggle] = useState('PwC')
+  const [expToggle, setExpToggle] = useState('UAIC')
 
   return (
     <section ref={ref} id="experience" className="min-h-[calc(100vh-100px)] w-full bg-green md:px-24 lg:px-40 font-main text-primary">

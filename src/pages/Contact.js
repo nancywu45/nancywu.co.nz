@@ -13,11 +13,11 @@ const Contact = forwardRef((props, ref) => {
         </div>
         <div className="flex-col text-center pt-36">
           <h2 className="text-3xl">get in touch!</h2>
-          <div className="font-code font-light pt-3 pb-10">
+          <div className="font-code font-light text-sm md:text-base pt-3 pb-10">
             <p>
               My inbox is open if you’d like to have a chat or feel free to reach out on my Github and LinkedIn profiles.
             </p>
-            <div className="text-primary md:invisible pt-2 text-4xl justify-center flex">
+            <div className="text-primary md:invisible pt-2 md:pt-0 text-4xl justify-center flex">
               <Link to="https://github.com/nancywu45" target="_blank">
                 <AiFillGithub className="mx-2"/>
               </Link>
