@@ -1,6 +1,6 @@
 # Nancy Wu | Portfolio
 
-My portfolio website deployed using Firebase. This page is currently a work in progress — check it out [here](https://nancywu.works)!
+My portfolio website deployed using Firebase — check it out [here](https://nancywu.works)!
 
 <img src="src\assets\portfolio_ss.png">
 
@@ -19,3 +19,5 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 - Tailwind CSS
 - MaterialUI
 - Firebase
+- Framer Motion (animations)
+- Typewriter-effect

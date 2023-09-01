@@ -109,7 +109,7 @@ const Experience = forwardRef((props, ref) => {
             </div>
           </div>
         </RevealFromBtm>
-        <RevealFromBtm delay={0.75} duration={1}>
+        <RevealFromBtm delay={1} duration={1}>
           <h3 className="text-2xl mt-4 mb-2 md:my-4">extracurricular</h3>
           <div className="font-code font-light md:flex">
             <div className="pb-2 md:pb-0">
