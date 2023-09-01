@@ -10,7 +10,7 @@ export const RevealFromBtm = ({ children, delay, duration }) => {
     if (isInView) {
       mainControls.start("visible")
     }
-  }, [isInView])
+  }, [isInView, mainControls])
 
   return (
     <div ref={ref}>
