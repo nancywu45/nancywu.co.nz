@@ -23,6 +23,10 @@ const Home = forwardRef(({aboutRef}, ref) => {
                   .pauseFor(1250)
                   .typeString("Hello! I'm")
                   .start()
+                  .pauseFor(300)
+                  .callFunction(() => {
+                    document.querySelector(".Typewriter__cursor").remove();
+                  })
               }}
             />
           </span>
@@ -35,10 +39,6 @@ const Home = forwardRef(({aboutRef}, ref) => {
                   .pauseFor(2400)
                   .typeString("Nancy Wu.")
                   .start()
-                  .pauseFor(800)
-                  .callFunction(() => {
-                    document.querySelector(".Typewriter__cursor").remove();
-                  })
               }}
             />
           </span>
