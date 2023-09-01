@@ -1,19 +1,7 @@
 import React from "react";
-// import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import { GiPlainSquare } from "react-icons/gi";
-
-// function CustomLink({ to, children, ...props }) {
-//   const resolvedPath = useResolvedPath(to);
-//   const isActive = useMatch({ path: resolvedPath.pathname, end: true });
-
-//   return (
-//     <li className={isActive === to ? "active" : ""}>
-//       <Link to={to} {...props}>
-//         {children}
-//       </Link>
-//     </li>
-//   );
-// }
+import { RevealFromTop } from "../components/RevealFromTop";
+import { Reveal } from "../components/Reveal";
 
 const Nav = ({homeRef, aboutRef, experienceRef, projectsRef, contactRef}) => {
   const scrollToRef = (ref) => {
@@ -22,34 +10,44 @@ const Nav = ({homeRef, aboutRef, experienceRef, projectsRef, contactRef}) => {
   return (
     <div className="w-full bg-green px-10 md:px-20 lg:px-30 sticky top-0 overflow-hidden">
       <nav className="py-8 md:py-10 text-primary font-main text-xl flex justify-between">
-        <button onClick={() => scrollToRef(homeRef)}>
-          <GiPlainSquare className="text-3xl justify-start cursor-pointer" />
-        </button>
+        <Reveal delay={0.25} duration={2}>
+          <button onClick={() => scrollToRef(homeRef)}>
+            <GiPlainSquare className="text-3xl justify-start cursor-pointer" />
+          </button>
+        </Reveal>
         <ul className="flex items-center">
-          <button
-            className="px-2 hover:underline underline-offset-4 invisible md:visible focus:underline"
-            onClick={() => scrollToRef(aboutRef)}
-          >
-            about
-          </button>
-          <button
-            className="px-2 hover:underline underline-offset-4 invisible md:visible  focus:underline"
-            onClick={() => scrollToRef(experienceRef)}
-          >
-            experience
-          </button>
-          <button
-            className="px-2 hover:underline underline-offset-4 invisible md:visible focus:underline"
-            onClick={() => scrollToRef(projectsRef)}
-          >
-            projects
-          </button>
-          <button
-            className="px-2 hover:underline underline-offset-4 invisible md:visible active:underline"
-            onClick={() => scrollToRef(contactRef)}
-          >
-            contact
-          </button>
+          <RevealFromTop delay={0.5} duration={0.5}>
+            <button
+              className="px-2 hover:underline underline-offset-4 invisible md:visible focus:underline"
+              onClick={() => scrollToRef(aboutRef)}
+            >
+              about
+            </button>
+          </RevealFromTop>
+          <RevealFromTop delay={0.65} duration={0.5}>
+            <button
+              className="px-2 hover:underline underline-offset-4 invisible md:visible  focus:underline"
+              onClick={() => scrollToRef(experienceRef)}
+            >
+              experience
+            </button>
+          </RevealFromTop>
+          <RevealFromTop delay={0.8} duration={0.5}>
+            <button
+              className="px-2 hover:underline underline-offset-4 invisible md:visible focus:underline"
+              onClick={() => scrollToRef(projectsRef)}
+            >
+              projects
+            </button>
+          </RevealFromTop>
+          <RevealFromTop delay={0.95} duration={0.5}>
+            <button
+              className="px-2 hover:underline underline-offset-4 invisible md:visible active:underline"
+              onClick={() => scrollToRef(contactRef)}
+            >
+              contact
+            </button>
+          </RevealFromTop>
         </ul>
       </nav>
     </div>

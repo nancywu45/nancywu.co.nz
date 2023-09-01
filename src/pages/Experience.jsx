@@ -1,4 +1,5 @@
 import React, { forwardRef, useState } from "react";
+import { RevealFromBtm } from "../components/RevealFromBtm";
 
 const Experience = forwardRef((props, ref) => {
 
@@ -59,92 +60,97 @@ const Experience = forwardRef((props, ref) => {
   return (
     <section ref={ref} id="experience" className="min-h-[calc(100vh-100px)] w-full bg-green md:px-24 lg:px-40 font-main text-primary">
       <div className="p-10">
-        <div className="flex">
-            <h2 className="flex-shrink text-3xl">experience</h2>
-            <div className="flex-grow border-t border-grey mt-5 ml-4"></div>
-        </div>
-        <h3 className="text-2xl mt-4 mb-2 md:my-4">work</h3>
-        <div className="font-code font-light md:flex">
-          <div className="pb-2 md:pb-0">
-            {
-              work.map(({id, company}) => {
-                return(
-                  <button 
-                    className={`border-b-2 md:border-l-2  ${workToggle === id ? 'border-grey text-grey bg-midGreen' : 'border-lightGreen text-lightGreen'}  md:border-b-0 px-4 py-2 text-center md:text-left w-28 md:py-4  font-normal text-left`}
-                    onClick={() => setWorkToggle(id)}
-                  >
-                    {company}
-                  </button>
-                )
-              })
-            }
+        <RevealFromBtm delay={0.25} duration={0.5}>
+          <div className="flex">
+              <h2 className="flex-shrink text-3xl">experience</h2>
+              <div className="flex-grow border-t border-grey mt-5 ml-4"></div>
           </div>
-          <div>
-            {
-              work.map(({id, company, role, startDate, endDate, bullet1, bullet2}) => {
-                return(
-                  <>
-                    {workToggle === id ? (
-                    <div className="md:ml-6">
-                      <p className="my-1 font-normal text-base md:text-lg">{company} · {role} </p>
-                      <p className="my-1 text-grey text-sm md:text-base">{startDate} — {endDate}</p>
-                      <ul className="my-1 ml-6 list-disc text-sm md:text-base">
-                        <li className="my-2">
-                          {bullet1}
-                        </li>
-                        <li className="my-2">
-                          {bullet2}
-                        </li>
-                      </ul>
-                    </div>) : null}
-                  </>
-                  
-                )
-              })
-            }
+        </RevealFromBtm>
+        <RevealFromBtm delay={0.5} duration={1}>
+          <h3 className="text-2xl mt-4 mb-2 md:my-4">work</h3>
+          <div className="font-code font-light md:flex">
+            <div className="pb-2 md:pb-0">
+              {
+                work.map(({id, company}) => {
+                  return(
+                    <button 
+                      className={`border-b-2 md:border-l-2  ${workToggle === id ? 'border-grey text-grey bg-midGreen' : 'border-lightGreen text-lightGreen'}  md:border-b-0 px-4 py-2 text-center md:text-left w-28 md:py-4`}
+                      onClick={() => setWorkToggle(id)}
+                    >
+                      {company}
+                    </button>
+                  )
+                })
+              }
+            </div>
+            <div>
+              {
+                work.map((work) => {
+                  return(
+                    <>
+                      {workToggle === work.id ? (
+                      <div className="md:ml-6">
+                        <p className="my-1 font-normal text-base md:text-lg">{work.company} · {work.role} </p>
+                        <p className="my-1 text-grey text-sm md:text-base">{work.startDate} — {work.endDate}</p>
+                        <ul className="my-1 ml-6 list-disc text-sm md:text-base">
+                          <li className="my-2">
+                            {work.bullet1}
+                          </li>
+                          <li className="my-2">
+                            {work.bullet2}
+                          </li>
+                        </ul>
+                      </div>) : null}
+                    </>
+                    
+                  )
+                })
+              }
+            </div>
           </div>
-        </div>
-        
-        <h3 className="text-2xl mt-4 mb-2 md:my-4">extracurricular</h3>
-        <div className="font-code font-light md:flex">
-          <div className="pb-2 md:pb-0">
-            {
-              extracurricular.map(({id, company}) => {
-                return(
-                  <button 
-                    className={`border-b-2 md:border-l-2  ${expToggle === id ? 'border-grey text-grey bg-midGreen' : 'border-lightGreen text-lightGreen'}  md:border-b-0 px-4 py-2 text-center md:text-left w-28 md:py-4  font-normal text-left`}
-                    onClick={() => setExpToggle(id)}
-                  >
-                    {id}
-                  </button>
-                )
-              })
-            }
+        </RevealFromBtm>
+        <RevealFromBtm delay={0.75} duration={1}>
+          <h3 className="text-2xl mt-4 mb-2 md:my-4">extracurricular</h3>
+          <div className="font-code font-light md:flex">
+            <div className="pb-2 md:pb-0">
+              {
+                extracurricular.map(({id}) => {
+                  return(
+                    <button 
+                      className={`border-b-2 md:border-l-2  ${expToggle === id ? 'border-grey text-grey bg-midGreen' : 'border-lightGreen text-lightGreen'}  md:border-b-0 px-4 py-2 text-center md:text-left w-28 md:py-4`}
+                      onClick={() => setExpToggle(id)}
+                    >
+                      {id}
+                    </button>
+                  )
+                })
+              }
+            </div>
+            <div>
+              {
+                extracurricular.map((extracurricular) => {
+                  return(
+                    <>
+                      {expToggle === extracurricular.id ? (
+                      <div className="md:ml-6">
+                        <p className="my-1 font-normal text-base md:text-lg">{extracurricular.company} · {extracurricular.role} </p>
+                        <p className="my-1 text-grey text-sm md:text-base">{extracurricular.startDate} — {extracurricular.endDate}</p>
+                        <ul className="my-1 ml-6 list-disc text-sm md:text-base">
+                          <li className="my-2">
+                            {extracurricular.bullet1}
+                          </li>
+                          <li className="my-2">
+                            {extracurricular.bullet2}
+                          </li>
+                        </ul>
+                      </div>) : null}
+                    </>
+                  )
+                })
+              }
+            </div>
           </div>
-          <div>
-            {
-              extracurricular.map(({id, company, role, startDate, endDate, bullet1, bullet2}) => {
-                return(
-                  <>
-                    {expToggle === id ? (
-                    <div className="md:ml-6">
-                      <p className="my-1 font-normal text-base md:text-lg">{company} · {role} </p>
-                      <p className="my-1 text-grey text-sm md:text-base">{startDate} — {endDate}</p>
-                      <ul className="my-1 ml-6 list-disc text-sm md:text-base">
-                        <li className="my-2">
-                          {bullet1}
-                        </li>
-                        <li className="my-2">
-                          {bullet2}
-                        </li>
-                      </ul>
-                    </div>) : null}
-                  </>
-                )
-              })
-            }
-          </div>
-        </div>
+        </RevealFromBtm>
       </div>
     </section>
   );
