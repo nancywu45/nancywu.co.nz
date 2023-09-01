@@ -21,7 +21,7 @@ const Home = forwardRef(({aboutRef}, ref) => {
               onInit={(helloTypewriter) => {
                 helloTypewriter
                   .pauseFor(1250)
-                  .typeString("Hello! Im")
+                  .typeString("Hello! I'm")
                   .start()
               }}
             />
