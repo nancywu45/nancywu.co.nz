@@ -5,11 +5,13 @@ import {
   BiLogoJavascript,
   BiLogoHtml5,
   BiLogoCss3,
+  BiLogoTailwindCss,
   BiLogoJava,
   BiLogoReact,
+  BiLogoFirebase,
+  BiLogoGit,
 } from "react-icons/bi";
-import { PiFigmaLogoThin } from "react-icons/pi";
-import nancy from "../assets/nancy.png";
+import { PiFigmaLogoThin, PiFileSqlLight } from "react-icons/pi";
 
 const About = forwardRef((props, ref) => {
   // const { ref: viewRef } = useInView();
@@ -42,14 +44,11 @@ const About = forwardRef((props, ref) => {
               </RevealFromBtm>
               <RevealFromBtm delay={1} duration={1}>
                 <p className="my-3">
-                  Some of my other interests include graphic design (most notably with platforms like Procreate and Figma), business and
+                  Some of my other interests include graphic design (working with the likes of Procreate and Figma), business and
                   tech podcasts, films, trying new restaurants, and fitness.
                 </p>
               </RevealFromBtm>
             </div>
-            <RevealFromBtm delay={1.25} duration={1}>
-              <img src={nancy} alt="nancy" className="w-52 md:ml-8 py-5" />
-            </RevealFromBtm>
           </div>
         </div>
         <div>
@@ -65,8 +64,12 @@ const About = forwardRef((props, ref) => {
               <BiLogoReact />
               <BiLogoHtml5 />
               <BiLogoCss3 />
+              <BiLogoTailwindCss />
               <BiLogoPython />
               <BiLogoJava />
+              <PiFileSqlLight />
+              <BiLogoFirebase />
+              <BiLogoGit />
               <PiFigmaLogoThin />
             </div>
           </RevealFromBtm>

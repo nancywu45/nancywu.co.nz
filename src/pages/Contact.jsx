@@ -8,17 +8,17 @@ const Contact = forwardRef((props, ref) => {
   return (
     <section ref={ref} className="min-h-[calc(100vh-100px)] w-full bg-green md:px-24 lg:px-40 font-main text-primary flex-col">
       <div className="p-10">
-        <RevealFromBtm delay={0.25} duration={0.5}>
+        <RevealFromBtm delay={0.75} duration={0.5}>
           <div className="flex">
               <h2 className="flex-shrink text-3xl">contact</h2>
               <div className="flex-grow border-t border-grey mt-5 ml-4"></div>
           </div>
         </RevealFromBtm>
         <div className="flex-col text-center pt-36">
-          <RevealFromBtm delay={0.5} duration={0.5}>
+          <RevealFromBtm delay={1} duration={0.5}>
             <h2 className="text-3xl">get in touch!</h2>
           </RevealFromBtm>
-          <RevealFromBtm delay={0.75} duration={1}>
+          <RevealFromBtm delay={1.25} duration={1}>
             <div className="font-code font-light text-sm md:text-base pt-3 pb-10">
               <p>
                 My inbox is open if you’d like to have a chat or feel free to reach out on my Github and LinkedIn profiles.
@@ -33,7 +33,7 @@ const Contact = forwardRef((props, ref) => {
               </div>
             </div>
           </RevealFromBtm>
-          <RevealFromBtm delay={1} duration={1}>
+          <RevealFromBtm delay={1.5} duration={1}>
             <button className="px-8 md:px-10 py-2 md:py-3 text-xl md:text-2xl border-white border-2 rounded-md hover:bg-midGreen">
               <Link to="mailto:nancywu45@gmail.com">Say Hello</Link>
             </button>

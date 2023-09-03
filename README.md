@@ -1,6 +1,6 @@
 # Nancy Wu | Portfolio
 
-My portfolio website deployed using Firebase — check it out [here](https://nancywu.works)!
+My portfolio website created using React.js and deployed using Firebase — check it out [here](https://nancywu.works)!
 
 <img src="src\assets\portfolio_ss.png">
 

@@ -73,12 +73,14 @@ const Experience = forwardRef((props, ref) => {
               {
                 work.map(({id, company}) => {
                   return(
-                    <button 
-                      className={`border-b-2 md:border-l-2  ${workToggle === id ? 'border-grey text-grey bg-midGreen' : 'border-lightGreen text-lightGreen'}  md:border-b-0 px-4 py-2 text-center md:text-left w-28 md:py-4`}
-                      onClick={() => setWorkToggle(id)}
-                    >
-                      {company}
-                    </button>
+                    <div>
+                      <button 
+                        className={`border-b-2 md:border-b-0 md:border-l-2 ${workToggle === id ? 'border-grey text-grey bg-midGreen' : 'border-lightGreen text-lightGreen'} px-4 py-2 md:py-4 w-28 text-center md:text-left`}
+                        onClick={() => setWorkToggle(id)}
+                      >
+                        {company}
+                      </button>
+                    </div>
                   )
                 })
               }
@@ -116,12 +118,14 @@ const Experience = forwardRef((props, ref) => {
               {
                 extracurricular.map(({id}) => {
                   return(
-                    <button 
-                      className={`border-b-2 md:border-l-2  ${expToggle === id ? 'border-grey text-grey bg-midGreen' : 'border-lightGreen text-lightGreen'}  md:border-b-0 px-4 py-2 text-center md:text-left w-28 md:py-4`}
-                      onClick={() => setExpToggle(id)}
-                    >
-                      {id}
-                    </button>
+                    <div>
+                      <button 
+                        className={`border-b-2 md:border-b-0 md:border-l-2  ${expToggle === id ? 'border-grey text-grey bg-midGreen' : 'border-lightGreen text-lightGreen'} px-4 py-2 md:py-4 w-28 text-center md:text-left`}
+                        onClick={() => setExpToggle(id)}
+                      >
+                        {id}
+                      </button>
+                    </div>
                   )
                 })
               }
