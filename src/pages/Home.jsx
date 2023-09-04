@@ -10,10 +10,10 @@ const Home = forwardRef(({aboutRef}, ref) => {
     window.scrollTo(0, ref.current.offsetTop - 110);
   }
   return (
-    <section ref={ref} id="home" className="min-h-[calc(100vh-100px)] bg-green md:px-24 lg:px-40 flex w-full items-center">
+    <section ref={ref} id="home" className="min-h-[calc(100vh-100px)] bg-green md:px-24 lg:px-96 flex w-full items-center">
       <div className="font-main text-primary p-10">
         <Reveal delay={1.25} duration={0.5}>
-          <span class="text-2xl md:text-2xl text-primary font-main">
+          <span className="text-2xl md:text-2xl lg:text-3xl text-primary font-main">
             <TypeWriter
               options={{
                 delay: 75
@@ -32,7 +32,7 @@ const Home = forwardRef(({aboutRef}, ref) => {
           </span>
         </Reveal>
         <Reveal delay={2.2} duration={0.5}>
-          <span className="text-5xl md:text-6xl font-semibold align-middle text-primary font-main">
+          <span className="text-5xl md:text-6xl lg:text-7xl font-semibold align-middle text-primary font-main">
             <TypeWriter
               onInit={(nameTypewriter) => {
                 nameTypewriter
@@ -44,7 +44,7 @@ const Home = forwardRef(({aboutRef}, ref) => {
           </span>
         </Reveal>
         <RevealFromBtm delay={4.5} duration={1}>
-          <p className="font-code text-sm md:text-base pt-8 pb-10 md:pb-14 max-w-xl text-grey">
+          <p className="font-code text-sm md:text-base lg:text-lg pt-8 pb-10 md:pb-14 max-w-xl lg:max-w-3xl text-grey">
             I’m a penultimate year Computer Science and Commerce student at the
             University of Auckland passionate about front-end development and the
             interconnection between business and technology.

@@ -17,16 +17,16 @@ const About = forwardRef((props, ref) => {
   // const { ref: viewRef } = useInView();
 
   return (
-    <section ref={ref} className="min-h-[calc(100vh-110px)] w-full bg-green md:px-24 lg:px-40 font-main text-primary flex-col">
+    <section ref={ref} className="min-h-[calc(100vh-110px)] w-full bg-green md:px-24 lg:px-96 font-main text-primary flex-col">
       <div className="p-10">
         <div>
           <RevealFromBtm delay={0.25} duration={0.5}>
             <div className="flex">
-              <h2 className="text-3xl pt-30 flex-shrink">about me</h2>
+              <h2 className="text-3xl lg:text-4xl pt-30 flex-shrink">about me</h2>
               <div className="flex-grow border-t border-grey mt-5 ml-3 md:ml-4"></div>
             </div>
           </RevealFromBtm>
-          <div className="text-sm md:text-base md:flex">
+          <div className="text-sm md:text-base lg:text-lg md:flex">
             <div className="font-code font-light my-4">
               <RevealFromBtm delay={0.5} duration={1}>
                 <p className="my-3">
@@ -54,12 +54,12 @@ const About = forwardRef((props, ref) => {
         <div>
           <RevealFromBtm delay={1.75} duration={0.5}>
             <div className="flex pt-10 pb-4 md:pb-6">
-              <h2 className="flex-shrink text-3xl">technologies</h2>
+              <h2 className="flex-shrink text-3xl lg:text-4xl">technologies</h2>
               <div className="flex-grow border-t border-grey mt-5 ml-4"></div>
             </div>
           </RevealFromBtm>
           <RevealFromBtm delay={2} duration={1}>
-            <div className="text-6xl md:text-7xl flex flex-wrap">
+            <div className="text-6xl md:text-7xl lg:text-8xl flex flex-wrap">
               <BiLogoJavascript />
               <BiLogoReact />
               <BiLogoHtml5 />
