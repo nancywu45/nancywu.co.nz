@@ -69,7 +69,7 @@ const Experience = forwardRef((props, ref) => {
         <RevealFromBtm delay={0.5} duration={1}>
           <h3 className="text-2xl lg:text-3xl mt-4 mb-2 md:my-4">work</h3>
           <div className="font-code font-light md:flex">
-            <div className="pb-2 md:pb-0">
+            <div className="pb-2 md:pb-0 flex flex-wrap md:flex-col">
               {
                 work.map(({id}) => {
                   return(
@@ -114,7 +114,7 @@ const Experience = forwardRef((props, ref) => {
         <RevealFromBtm delay={1} duration={1}>
           <h3 className="text-2xl lg:text-3xl mt-4 mb-2 md:my-4">extracurricular</h3>
           <div className="font-code font-light md:flex">
-            <div className="pb-2 md:pb-0">
+            <div className="pb-2 md:pb-0 flex flex-wrap md:flex-col ">
               {
                 extracurricular.map(({id}) => {
                   return(
