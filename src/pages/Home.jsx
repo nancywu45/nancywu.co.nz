@@ -10,7 +10,7 @@ const Home = forwardRef(({aboutRef}, ref) => {
     window.scrollTo(0, ref.current.offsetTop - 110);
   }
   return (
-    <section ref={ref} id="home" className="min-h-[calc(100vh-100px)] bg-green md:px-24 lg:px-96 flex w-full items-center">
+    <section ref={ref} id="home" className="min-h-[calc(100vh-100px)] md:px-24 max-w-7xl mx-auto flex items-center">
       <div className="font-main text-primary p-10">
         <Reveal delay={1.25} duration={0.5}>
           <span className="text-2xl md:text-2xl lg:text-3xl text-primary font-main">

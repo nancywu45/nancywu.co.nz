@@ -58,7 +58,7 @@ const Experience = forwardRef((props, ref) => {
   const [expToggle, setExpToggle] = useState('UAIC')
 
   return (
-    <section ref={ref} id="experience" className="min-h-[calc(100vh-100px)] w-full bg-green md:px-24 lg:px-96 font-main text-primary">
+    <section ref={ref} id="experience" className="min-h-[calc(100vh-100px)] md:px-24 max-w-7xl mx-auto font-main text-primary">
       <div className="p-10">
         <RevealFromBtm delay={0.25} duration={0.5}>
           <div className="flex">
