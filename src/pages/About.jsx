@@ -1,5 +1,6 @@
 import React, { forwardRef } from "react";
 import { RevealFromBtm } from "../components/RevealFromBtm";
+import { Enlarge } from "../components/Enlarge";
 import {
   BiLogoPython,
   BiLogoJavascript,
@@ -60,17 +61,39 @@ const About = forwardRef((props, ref) => {
           </RevealFromBtm>
           <RevealFromBtm delay={2} duration={1}>
             <div className="text-6xl md:text-7xl lg:text-8xl flex flex-wrap">
-              <BiLogoJavascript />
-              <BiLogoReact />
-              <BiLogoHtml5 />
-              <BiLogoCss3 />
-              <BiLogoTailwindCss />
-              <BiLogoPython />
-              <BiLogoJava />
-              <PiFileSqlLight />
-              <BiLogoFirebase />
-              <BiLogoGit />
-              <PiFigmaLogoThin />
+              <Enlarge scale={1.2}>
+                <BiLogoJavascript />
+              </Enlarge>
+              <Enlarge scale={1.2}>
+                <BiLogoReact />
+              </Enlarge>
+              <Enlarge scale={1.2}>
+                <BiLogoHtml5 />
+              </Enlarge>
+              <Enlarge scale={1.2}>
+                <BiLogoCss3 />
+              </Enlarge>
+              <Enlarge scale={1.2}>
+                <BiLogoTailwindCss />
+              </Enlarge>
+              <Enlarge scale={1.2}>
+                <BiLogoPython />
+              </Enlarge>
+              <Enlarge scale={1.2}>
+                <BiLogoJava />
+              </Enlarge>
+              <Enlarge scale={1.2}>
+                <PiFileSqlLight />
+              </Enlarge>
+              <Enlarge scale={1.2}>
+                <BiLogoFirebase />
+              </Enlarge>
+              <Enlarge scale={1.2}>
+                <BiLogoGit />
+              </Enlarge>
+              <Enlarge scale={1.2}>
+                <PiFigmaLogoThin />
+              </Enlarge>
             </div>
           </RevealFromBtm>
         </div>

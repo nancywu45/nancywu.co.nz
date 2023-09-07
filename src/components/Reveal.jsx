@@ -13,18 +13,17 @@ export const Reveal = ({ children, delay, duration }) => {
   }, [isInView, mainControls])
 
   return (
-    <div ref={ref}>
-      <motion.div
-        variants={{
-          hidden: { opacity: 0, y: 0 },
-          visible: { opacity: 1, y: 0 }
-        }}
-        initial="hidden"
-        animate={mainControls}
-        transition={{ duration: duration, delay: delay }}
-        >
-        {children}
-      </motion.div>
-    </div>
+    <motion.div
+      ref={ref}
+      variants={{
+        hidden: { opacity: 0, y: 0 },
+        visible: { opacity: 1, y: 0 }
+      }}
+      initial="hidden"
+      animate={mainControls}
+      transition={{ duration: duration, delay: delay }}
+      >
+      {children}
+    </motion.div>
   )
 }
