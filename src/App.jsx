@@ -14,7 +14,7 @@ function App() {
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
   return (
-    <div className="bg-green">
+    <div className="bg-green selection:bg-lightGreen">
       <Nav homeRef={homeRef} experienceRef={experienceRef} aboutRef={aboutRef} projectsRef={projectsRef} contactRef={contactRef}/>
       <Home ref={homeRef} aboutRef={aboutRef}/>
       <About ref={aboutRef}/>
