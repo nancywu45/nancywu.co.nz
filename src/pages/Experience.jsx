@@ -5,6 +5,15 @@ const Experience = forwardRef((props, ref) => {
 
   const work = [
     {
+      id: 'Deloitte',
+      company: 'Deloitte Australia',
+      role: 'Data & AI Consulting Vacationer',
+      startDate: 'Nov 2023',
+      endDate: 'Dec 2023',
+      bullet1: 'Worked in an agile team of 6 to develop a generative AI chatbot for the client using Azure OpenAI Service, React.js, and Typescript',
+      bullet2: 'Drafted client documentation for a First Time User Walkthrough for the application',
+    },
+    {
       id: 'PwC',
       company: 'PwC New Zealand',
       role: 'Corporate Treasury Intern',
@@ -26,22 +35,22 @@ const Experience = forwardRef((props, ref) => {
 
   const extracurricular = [
     {
+      id: 'DEVS',
+      company: 'Developers Society',
+      role: 'Sponsorship Manager',
+      startDate: 'Nov 2022',
+      endDate: 'Present',
+      bullet1: 'Largest student run tech club in NZ aiming to bridge the gap between academia and industry, consisting of ~300 members',
+      bullet2: 'Actively reached out to firms to form sponsorship relationships and maintained existing partnerships',
+    },
+    {
       id: 'UAIC',
       company: 'University of Auckland Investment Club',
       role: 'Co-President',
       startDate: 'Oct 2022',
-      endDate: 'Present',
+      endDate: 'Dec 2023',
       bullet1: 'Co-leading a team of 23 to provide a 30+ event schedule for members, consisting of educational workshops, competitions, mentoring programmes, and networking opportunities centred around finance and investing',
       bullet2: 'Increased club membership numbers by 67% to ~450 in 2023',
-    },
-    {
-      id: 'DEVS',
-      company: 'Developers Society',
-      role: 'Treasurer',
-      startDate: 'Nov 2022',
-      endDate: 'Present',
-      bullet1: 'Largest student run tech club in NZ aiming to bridge the gap between academia and industry, consisting of ~300 members',
-      bullet2: 'Communicating with firms for sponsorship contracts and managed the yearly budget for EOY financial statements',
     },
     {
       id: 'UoA Case',
@@ -54,8 +63,8 @@ const Experience = forwardRef((props, ref) => {
     }
   ]
 
-  const [workToggle, setWorkToggle] = useState('PwC')
-  const [expToggle, setExpToggle] = useState('UAIC')
+  const [workToggle, setWorkToggle] = useState('Deloitte')
+  const [expToggle, setExpToggle] = useState('DEVS')
 
   return (
     <section ref={ref} id="experience" className="min-h-[calc(100vh-100px)] md:px-24 max-w-7xl mx-auto font-main text-primary">
