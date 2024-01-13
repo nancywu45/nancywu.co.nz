@@ -26,7 +26,7 @@ const Nav = ({homeRef, aboutRef, experienceRef, projectsRef, contactRef}) => {
           </RevealFromTop>
           <RevealFromTop delay={0.65} duration={0.5}>
             <button
-              className="px-2 hover:underline underline-offset-4 invisible md:visible  focus:underline"
+              className="px-2 hover:underline underline-offset-4 invisible md:visible focus:underline"
               onClick={() => scrollToRef(experienceRef)}
             >
               experience
@@ -42,7 +42,7 @@ const Nav = ({homeRef, aboutRef, experienceRef, projectsRef, contactRef}) => {
           </RevealFromTop>
           <RevealFromTop delay={0.95} duration={0.5}>
             <button
-              className="px-2 hover:underline underline-offset-4 invisible md:visible active:underline"
+              className="px-2 hover:underline underline-offset-4 invisible md:visible focus:underline"
               onClick={() => scrollToRef(contactRef)}
             >
               contact

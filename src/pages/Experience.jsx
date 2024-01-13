@@ -5,6 +5,15 @@ const Experience = forwardRef((props, ref) => {
 
   const work = [
     {
+      id: 'Unleashed',
+      company: 'Unleashed Software',
+      role: 'Developer Intern',
+      startDate: 'Jan 2024',
+      endDate: 'Present',
+      bullet1: 'Developing and maintaining production code for core features across the Inventory Management System, primarily using, C#, .NET, and Angular',
+      bullet2: 'Collaborating with the engineering team in an agile environment using Scrum methodology',
+    },
+    {
       id: 'Deloitte',
       company: 'Deloitte Australia',
       role: 'Data & AI Consulting Vacationer',
@@ -18,7 +27,7 @@ const Experience = forwardRef((props, ref) => {
       company: 'PwC New Zealand',
       role: 'Corporate Treasury Intern',
       startDate: 'Nov 2022',
-      endDate: 'Present',
+      endDate: 'Nov 2023',
       bullet1: 'Contributed to development of Treasury Intelligence, an SQL and PowerBI-based SaaS to help clients monitor hedging and risks',
       bullet2: 'Assisted with commentary on FX and interest rate markets for clients'
     },
@@ -38,9 +47,9 @@ const Experience = forwardRef((props, ref) => {
       id: 'DEVS',
       company: 'Developers Society',
       role: 'Sponsorship Manager',
-      startDate: 'Nov 2022',
+      startDate: 'Nov 2023',
       endDate: 'Present',
-      bullet1: 'Largest student run tech club in NZ aiming to bridge the gap between academia and industry, consisting of ~300 members',
+      bullet1: 'Largest student-run tech club in NZ aiming to bridge the gap between academia and industry, consisting of ~300 members. Previously held Treasurer and Education Team Member roles (2022 - 2023)',
       bullet2: 'Actively reached out to firms to form sponsorship relationships and maintained existing partnerships',
     },
     {
@@ -49,7 +58,7 @@ const Experience = forwardRef((props, ref) => {
       role: 'Co-President',
       startDate: 'Oct 2022',
       endDate: 'Dec 2023',
-      bullet1: 'Co-leading a team of 23 to provide a 30+ event schedule for members, consisting of educational workshops, competitions, mentoring programmes, and networking opportunities centred around finance and investing',
+      bullet1: 'Co-led a team of 23 to provide a 30+ event schedule for members, consisting of educational workshops, competitions, mentoring programmes, and networking opportunities centred around finance and investing',
       bullet2: 'Increased club membership numbers by 67% to ~450 in 2023',
     },
     {
@@ -63,7 +72,7 @@ const Experience = forwardRef((props, ref) => {
     }
   ]
 
-  const [workToggle, setWorkToggle] = useState('Deloitte')
+  const [workToggle, setWorkToggle] = useState('Unleashed')
   const [expToggle, setExpToggle] = useState('DEVS')
 
   return (
@@ -84,7 +93,7 @@ const Experience = forwardRef((props, ref) => {
                   return(
                     <div>
                       <button 
-                        className={`border-b-2 md:border-b-0 md:border-l-2 ${workToggle === id ? 'border-grey text-grey bg-midGreen' : 'border-lightGreen text-lightGreen'} px-4 py-2 md:py-4 w-28 text-center md:text-left`}
+                        className={`border-b-2 md:border-b-0 md:border-l-2 ${workToggle === id ? 'border-grey text-grey bg-midGreen' : 'border-lightGreen text-lightGreen'} px-4 py-2 md:py-4 w-32 text-center md:text-left`}
                         onClick={() => setWorkToggle(id)}
                       >
                         {id}
@@ -129,7 +138,7 @@ const Experience = forwardRef((props, ref) => {
                   return(
                     <div>
                       <button 
-                        className={`border-b-2 md:border-b-0 md:border-l-2  ${expToggle === id ? 'border-grey text-grey bg-midGreen' : 'border-lightGreen text-lightGreen'} px-4 py-2 md:py-4 w-28 text-center md:text-left`}
+                        className={`border-b-2 md:border-b-0 md:border-l-2  ${expToggle === id ? 'border-grey text-grey bg-midGreen' : 'border-lightGreen text-lightGreen'} px-4 py-2 md:py-4 w-32 text-center md:text-left`}
                         onClick={() => setExpToggle(id)}
                       >
                         {id}

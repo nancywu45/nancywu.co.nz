@@ -13,6 +13,7 @@ import {
   BiLogoGit,
 } from "react-icons/bi";
 import { PiFigmaLogoThin, PiFileSqlLight } from "react-icons/pi";
+import { SiCsharp } from "react-icons/si";
 
 const About = forwardRef((props, ref) => {
   // const { ref: viewRef } = useInView();
@@ -31,22 +32,20 @@ const About = forwardRef((props, ref) => {
             <div className="font-code font-light my-4">
               <RevealFromBtm delay={0.5} duration={1}>
                 <p className="my-3">
-                  My name is Nancy and I am in my third year of a Computer Science
+                  My name is Nancy and I am in my fourth year of a Computer Science
                   and Commerce degree at the University of Auckland.
                 </p>
               </RevealFromBtm>
               <RevealFromBtm delay={0.75} duration={1}>
                 <p className="my-3">
-                  I have had a passion for visual art and design since I was a kid,
-                  so naturally my passion in software leans toward front-end
-                  development. I enjoy dabbling with new software products and technologies, 
+                  I have had a passion for visual art and design since I was a kid
+                  so I love all things front-end but I have also developed a passion for the more analytical side of back-end development. I enjoy dabbling with new software products and technologies, 
                   especially in the web and mobile development area.
                 </p>
               </RevealFromBtm>
               <RevealFromBtm delay={1} duration={1}>
                 <p className="my-3">
-                  Some of my other interests include graphic design (working with the likes of Procreate and Figma), business and
-                  tech podcasts, films, trying new restaurants, and fitness.
+                  Some of my other interests include drawing, podcasts, films, trying new restaurants, and fitness.
                 </p>
               </RevealFromBtm>
             </div>
@@ -81,6 +80,9 @@ const About = forwardRef((props, ref) => {
               </Enlarge>
               <Enlarge scale={1.2}>
                 <BiLogoJava />
+              </Enlarge>
+              <Enlarge scale={1.2}>
+                <SiCsharp />
               </Enlarge>
               <Enlarge scale={1.2}>
                 <PiFileSqlLight />
