@@ -4,10 +4,10 @@
 
 /* Firefox */
 /* NEEDS EDITING */
-* {
+/* * {
   scrollbar-width: thin;
   scrollbar-color: white;
-}
+} */
 
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
