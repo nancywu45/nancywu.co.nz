@@ -51,19 +51,19 @@ const About = forwardRef((props, ref) => {
               <RevealFromBtm delay={1.25} duration={1}>
                 <ul className="ml-6">
                   <li>
-                    <a href="https://www.instagram.com/nancysdrawings/" target="_blank">🎨 <span className="hover:underline underline-offset-4 focus:underline">@nancysdrawings art account</span></a>
+                    <a href="https://www.instagram.com/nancysdrawings/" target="_blank" rel="noreferrer">🎨 <span className="hover:underline underline-offset-4 focus:underline">@nancysdrawings art account</span></a>
                   </li>
                   <li>
-                    <a href="https://www.strava.com/athletes/91464495" target="_blank">👟 <span className="hover:underline underline-offset-4 focus:underline">Strava</span></a>
+                    <a href="https://www.strava.com/athletes/91464495" target="_blank" rel="noreferrer">👟 <span className="hover:underline underline-offset-4 focus:underline">Strava</span></a>
                   </li>
                   <li>
-                    <a href="https://www.alltrails.com/en-gb/members/nancy-wu-41" target="_blank">⛰️ <span className="hover:underline underline-offset-4 focus:underline">AllTrails</span></a>
+                    <a href="https://www.alltrails.com/en-gb/members/nancy-wu-41" target="_blank" rel="noreferrer">⛰️ <span className="hover:underline underline-offset-4 focus:underline">AllTrails</span></a>
                   </li>
                   <li>
-                    <a href="https://letterboxd.com/nancywu/" target="_blank">🎬 <span className="hover:underline underline-offset-4 focus:underline">Letterboxd</span></a>
+                    <a href="https://letterboxd.com/nancywu/" target="_blank" rel="noreferrer">🎬 <span className="hover:underline underline-offset-4 focus:underline">Letterboxd</span></a>
                   </li>
                   <li>
-                    <a href="https://www.goodreads.com/user/show/58478874-nancy" target="_blank">📖 <span className="hover:underline underline-offset-4 focus:underline">Goodreads</span></a>
+                    <a href="https://www.goodreads.com/user/show/58478874-nancy" target="_blank" rel="noreferrer">📖 <span className="hover:underline underline-offset-4 focus:underline">Goodreads</span></a>
                   </li>
                 </ul>
               </RevealFromBtm>

@@ -15,7 +15,7 @@ import tradeez from "../assets/tradeez.png"
 import musicale from "../assets/musicale.png"
 import auxilium from "../assets/auxilium.png"
 import { RevealFromBtm } from "../components/RevealFromBtm";
-import { Enlarge } from "../components/Enlarge"
+// import { Enlarge } from "../components/Enlarge"
 
 export default function ProjectCards() {
   const theme = createTheme({
