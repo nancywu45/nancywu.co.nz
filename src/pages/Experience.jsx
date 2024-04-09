@@ -10,7 +10,7 @@ const Experience = forwardRef((props, ref) => {
       role: 'Developer Intern',
       startDate: 'Jan 2024',
       endDate: 'Present',
-      bullet1: 'Developing and maintaining production code for core features across the Inventory Management System, primarily using, C#, .NET, and Angular',
+      bullet1: 'Developing and maintaining production code for core features across the Inventory Management System, primarily using, C#, .NET, and Javascript',
       bullet2: 'Collaborating with the engineering team in an agile environment using Scrum methodology',
     },
     {

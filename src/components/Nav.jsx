@@ -2,6 +2,7 @@ import React from "react";
 import { GiPlainSquare } from "react-icons/gi";
 import { RevealFromTop } from "../components/RevealFromTop";
 import { Reveal } from "../components/Reveal";
+import { Enlarge } from "../components/Enlarge";
 
 const Nav = ({homeRef, aboutRef, experienceRef, projectsRef, contactRef}) => {
   const scrollToRef = (ref) => {
@@ -11,9 +12,11 @@ const Nav = ({homeRef, aboutRef, experienceRef, projectsRef, contactRef}) => {
     <div className="w-full bg-green px-10 md:px-20 lg:px-30 sticky top-0 overflow-hidden z-10">
       <nav className="py-8 md:py-10 text-primary font-main text-xl flex justify-between">
         <Reveal delay={0.25} duration={2}>
-          <button onClick={() => scrollToRef(homeRef)}>
-            <GiPlainSquare className="text-3xl justify-start cursor-pointer" />
-          </button>
+          <Enlarge scale={1.1}>
+            <button onClick={() => scrollToRef(homeRef)}>
+              <GiPlainSquare className="text-3xl justify-start cursor-pointer" />
+            </button>
+          </Enlarge>
         </Reveal>
         <ul className="flex items-center">
           <RevealFromTop delay={0.5} duration={0.5}>
