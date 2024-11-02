@@ -4,18 +4,9 @@ My portfolio website created using React.js and deployed using Firebase — chec
 
 <img src="src\assets\portfolio_ss.png">
 
-## Get Started
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
 ## Technologies used
 
-- React.js
+- Next.js
 - Tailwind CSS
 - MaterialUI
 - Firebase
