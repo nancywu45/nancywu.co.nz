@@ -14,6 +14,7 @@ import trilogy from "../assets/trilogy.png"
 import tradeez from "../assets/tradeez.png"
 import musicale from "../assets/musicale.png"
 import auxilium from "../assets/auxilium.png"
+import miniq from "../assets/miniq.png"
 import { RevealFromBtm } from "../components/RevealFromBtm";
 // import { Enlarge } from "../components/Enlarge"
 
@@ -38,6 +39,53 @@ export default function ProjectCards() {
   return (
     <div className="flex gap-7 pt-3 flex-wrap">
       <ThemeProvider theme={theme}>
+      <RevealFromBtm delay={0.75} duration={1}>
+          <Card
+            sx={{ maxWidth: 345 }}
+            className="font-code"
+            style={{ backgroundColor: "#DFE5DC" }}
+          >
+            <CardMedia
+            sx = {{ height: 220 }}
+              image= { miniq }
+              alt="miniq"
+            />
+            <CardContent>
+              <Typography
+                gutterBottom
+                variant="h5"
+                component="div"
+                color="primary"
+                fontWeight="bold"
+                align="center"
+              >
+                Mini-Q
+              </Typography>
+              <Typography variant="body2" color="text.secondary" align="center">
+              A collection tool to tell your health professional what information you require about your medication
+              </Typography>
+            </CardContent>
+            <CardActions>
+              <Button size="medium" color="primary">
+                {/* <Link
+                  to="https://github.com/nancywu45/trilogy-tutoring"
+                  target="_blank"
+                >
+                  <FiGithub />
+                </Link> */}
+              </Button>
+              <Typography variant="body2" color="text.secondary">
+                React.js
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                PostgreSQL
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                AWS
+              </Typography>
+            </CardActions>
+          </Card>
+        </RevealFromBtm>
         <RevealFromBtm delay={0.5} duration={1}>
           <Card
             sx={{ maxWidth: 345 }}
