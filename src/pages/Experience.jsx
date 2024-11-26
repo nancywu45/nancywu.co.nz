@@ -30,15 +30,6 @@ const Experience = forwardRef((props, ref) => {
       endDate: 'Nov 2023',
       bullet1: 'Contributed to development of Treasury Intelligence, an SQL and PowerBI-based SaaS to help clients monitor hedging and risks',
       bullet2: 'Assisted with commentary on FX and interest rate markets for clients'
-    },
-    {
-      id: '2degrees',
-      company: '2degrees',
-      role: 'Retail Assistant',
-      startDate: 'Nov 2021',
-      endDate: 'Oct 2022',
-      bullet1: 'Upselling tech products and mobile/broadband plans with long-term financing options to read monthly store KPI targets',
-      bullet2: 'Reached more than $8,000 daily sales in peak periods',
     }
   ]
 
@@ -60,15 +51,6 @@ const Experience = forwardRef((props, ref) => {
       endDate: 'Dec 2023',
       bullet1: 'Co-led a team of 23 to provide a 30+ event schedule for members, consisting of educational workshops, competitions, mentoring programmes, and networking opportunities centred around finance and investing',
       bullet2: 'Increased club membership numbers by 67% to ~450 in 2023',
-    },
-    {
-      id: 'UoA Case',
-      company: 'University of Auckland Case Programme',
-      role: 'Member',
-      startDate: 'Sep 2022',
-      endDate: 'Present',
-      bullet1: 'Working in teams to analyse a business case and formulate strategies and implementation recommendations before presenting to a panel of judges',
-      bullet2: 'Eligible to represent the university in national and international case competitions',
     }
   ]
 
